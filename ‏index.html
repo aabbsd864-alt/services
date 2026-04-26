@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليلك للخدمات الإلكترونية</title>
+    <style>
+        :root {
+            --primary-color: #25D366;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --accent-color: #38bdf8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: var(--card-bg);
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            border: 1px solid #334155;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+        }
+
+        .icon-box {
+            background: rgba(56, 189, 248, 0.1);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            font-size: 32px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .feature-tag {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px 5px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #cbd5e1;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-tag span {
+            display: block;
+            color: var(--accent-color);
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: var(--primary-color);
+            color: white;
+            padding: 18px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
+            background: #1eb954;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="icon-box">🛡️</div>
+    <h1>دليلك للخدمات الإلكترونية</h1>
+    <p class="description">وجهتكم الموثوقة لإنجاز كافة التعاملات والخدمات الرقمية بسرعة، دقة، وأمان تام.</p>
+
+    <div class="feature-grid">
+        <div class="feature-tag">
+            <span>⚡</span>
+            إنجاز سريع
+        </div>
+        <div class="feature-tag">
+            <span>🔒</span>
+            خصوصية
+        </div>
+        <div class="feature-tag">
+            <span>💎</span>
+            إتقان
+        </div>
+    </div>
+
+    <a class="btn" href="https://wa.me/966555694889">
+        <span>تواصل معنا الآن</span>
+    </a>
+
+    <p class="footer-text">نحن هنا لخدمتكم وتسهيل معاملاتكم</p>
+</div>
+
+</body>
+</html>
